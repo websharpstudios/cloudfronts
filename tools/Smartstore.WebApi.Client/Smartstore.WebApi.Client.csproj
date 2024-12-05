@@ -11,7 +11,7 @@
     <Product />
     <Copyright>Copyright © Smartstore AG</Copyright>
     <PackageProjectUrl>https://smartstore.com/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/smartstore/Smartstore</RepositoryUrl>
+    <RepositoryUrl>https://github.com/websharpstudios/cloudfronts</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>

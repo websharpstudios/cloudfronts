@@ -10,7 +10,7 @@ you need to communicate an important security issue.
 
 After assessing the issue, we will work out how we will handle the matter and let you know how to proceed. 
 If the vulnerability is neither _sensitive_, _critical_, or _urgent_, 
-please just create a <a href="https://github.com/smartstore/Smartstore/issues/new/choose">new issue</a> as per normal.
+please just create a <a href="https://github.com/websharpstudios/cloudfronts/issues/new/choose">new issue</a> as per normal.
 
 ## Create an issue
 If you stumble across an error, have an improvement suggestion or a feature request, feel free to write an issue to let us know what's on your mind.

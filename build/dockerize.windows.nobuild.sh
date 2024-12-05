@@ -1,3 +1,3 @@
 cd ..
-docker build -t ghcr.io/smartstore/smartstore-windows -f Nano.Dockerfile .
+docker build -t ghcr.io/cloudfrontapps039/cloudfronts-windows -f Nano.Dockerfile .
 echo 'Press enter to exit...'; read dummy;

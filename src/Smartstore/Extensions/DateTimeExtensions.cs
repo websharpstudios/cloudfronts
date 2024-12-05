@@ -223,7 +223,7 @@ namespace Smartstore
             }
             catch (ArgumentException)
             {
-                // See https://github.com/smartstore/Smartstore/issues/1041
+                // See https://github.com/websharpstudios/cloudfronts/issues/1041
                 return value.Humanize(utcDate, dateToCompareAgainst, CultureInfo.InvariantCulture);
             }
         }

@@ -32,7 +32,7 @@ namespace Smartstore.Web.Api.Bootstrapping
 
                 // TODO: (mg) (core) ODataModelBuilder always reverts back to 'Default' namespace if we choose to set it to null\empty here.
                 // As a result, Microsoft.OData.Client generates wrong code with wrong URLs including 'Default' for action methods.
-                // See https://github.com/smartstore/Smartstore/issues/389.
+                // See https://github.com/websharpstudios/cloudfronts/issues/389.
                 var modelBuilder = new ODataConventionModelBuilder();
 
                 foreach (var provider in modelProviders)

@@ -113,25 +113,25 @@ The state-of-the-art architecture of Smartstore - with `ASP.NET Core 7`, `Entity
 
 ### Upgrade from Smartstore.NET 4.2
 
-Smartstore 5 is a port of [Smartstore.NET 4](https://github.com/smartstore/SmartStoreNET) - based on the classic .NET Framework 4.7.2 – to the new `ASP.NET Core 7` platform. Smartstore instances based on classic `ASP.NET MVC` can be upgraded seamlessly. To [upgrade](https://smartstore.atlassian.net/wiki/spaces/SMNET50/pages/1956118609/Updating+from+Previous+Versions), all you need to do is replace the application files on your server - except for the `App_Data` directory - and **all your data will automatically be transferred to the new system**. [See the documentation for detailed information on installing or upgrading your store](https://smartstore.atlassian.net/wiki/spaces/SMNET50/pages/1956118822/Installing+Smartstore).
+Smartstore 5 is a port of [Smartstore.NET 4](https://github.com/websharpstudios/cloudfrontsNET) - based on the classic .NET Framework 4.7.2 – to the new `ASP.NET Core 7` platform. Smartstore instances based on classic `ASP.NET MVC` can be upgraded seamlessly. To [upgrade](https://smartstore.atlassian.net/wiki/spaces/SMNET50/pages/1956118609/Updating+from+Previous+Versions), all you need to do is replace the application files on your server - except for the `App_Data` directory - and **all your data will automatically be transferred to the new system**. [See the documentation for detailed information on installing or upgrading your store](https://smartstore.atlassian.net/wiki/spaces/SMNET50/pages/1956118822/Installing+Smartstore).
 
  :information_source: Upgrading from versions older than 4.2 is not possible. Therefore, you should migrate Smartstore.NET to version 4.2 first and then upgrade to Smartstore 5.
 
 ### Visual Studio
 
-- Clone the repository using the command `git clone https://github.com/smartstore/Smartstore.git` and checkout the `main` branch.
+- Clone the repository using the command `git clone https://github.com/websharpstudios/cloudfronts.git` and checkout the `main` branch.
 - Download Visual Studio 2022 (any edition) from https://www.visualstudio.com/downloads/
 - Open `Smartstore.sln` and wait for Visual Studio to restore all NuGet packages
 - Make sure `Smartstore.Web` is the startup project and run it
 
 ### Repository Structure
 
-- [`Smartstore`](https://github.com/smartstore/Smartstore/tree/main/src/Smartstore) contains common low-level application-agnostic stuff like bootstrapper, modularity engine, caching, pub/sub, imaging, type conversion, IO, templating, scheduling, various utilities, common extension methods etc.
-- [`Smartstore.Data`](https://github.com/smartstore/Smartstore/tree/main/src/Smartstore.Data) contains database providers
-- [`Smartstore.Core`](https://github.com/smartstore/Smartstore/tree/main/src/Smartstore.Core) contains application specific modules like catalog, checkout, identity, security, localization, logging, messaging, rules engine, search engine, theme engine, migrations etc.
-- [`Smartstore.Web.Common`](https://github.com/smartstore/Smartstore/tree/main/src/Smartstore.Web.Common) contains common web features like custom MVC infrastructure, bundling, TagHelpers, HtmlHelpers etc.
-- [`Smartstore.Modules`](https://github.com/smartstore/Smartstore/tree/main/src/Smartstore.Modules) contains all module/plugin projects
-- [`Smartstore.Web`](https://github.com/smartstore/Smartstore/tree/main/src/Smartstore.Web) is the entry host project that contains controllers, model classes, themes, static assets etc.
+- [`Smartstore`](https://github.com/websharpstudios/cloudfronts/tree/main/src/Smartstore) contains common low-level application-agnostic stuff like bootstrapper, modularity engine, caching, pub/sub, imaging, type conversion, IO, templating, scheduling, various utilities, common extension methods etc.
+- [`Smartstore.Data`](https://github.com/websharpstudios/cloudfronts/tree/main/src/Smartstore.Data) contains database providers
+- [`Smartstore.Core`](https://github.com/websharpstudios/cloudfronts/tree/main/src/Smartstore.Core) contains application specific modules like catalog, checkout, identity, security, localization, logging, messaging, rules engine, search engine, theme engine, migrations etc.
+- [`Smartstore.Web.Common`](https://github.com/websharpstudios/cloudfronts/tree/main/src/Smartstore.Web.Common) contains common web features like custom MVC infrastructure, bundling, TagHelpers, HtmlHelpers etc.
+- [`Smartstore.Modules`](https://github.com/websharpstudios/cloudfronts/tree/main/src/Smartstore.Modules) contains all module/plugin projects
+- [`Smartstore.Web`](https://github.com/websharpstudios/cloudfronts/tree/main/src/Smartstore.Web) is the entry host project that contains controllers, model classes, themes, static assets etc.
 
 <p>&nbsp;</p>
 

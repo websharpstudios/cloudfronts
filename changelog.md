@@ -225,7 +225,7 @@
 - PayPal: Only the frist refund executed from the backend was accepted by PayPal.
 - PayPal: Fixed unhandled payer action required problem for wallet payment methods.
 
-## Smartstore 5.1.0
+## Smartstore 9.1.0
 
 ### New Features
 

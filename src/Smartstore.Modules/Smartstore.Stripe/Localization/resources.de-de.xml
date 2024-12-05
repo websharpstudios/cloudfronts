@@ -9,7 +9,7 @@
     <!-- 
         TODO: (mh) (core) 
         Alter this when the following issue is resolved
-        https://github.com/smartstore/Smartstore/issues/574
+        https://github.com/websharpstudios/cloudfronts/issues/574
         The following two resources should be display in the frontend.
     -->
 	<LocaleResource Name="Plugins.FriendlyName.Payments.StripeElements" AppendRootKey="false">
