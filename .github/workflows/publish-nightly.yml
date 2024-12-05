@@ -43,7 +43,7 @@ jobs:
       run: dotnet test Smartstore.sln -c Release --no-restore --no-build
     
     - name: Log in to the GitHub Container registry
-      uses: docker/login-action@v3
+      uses: docker/login-action@v3.3
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
