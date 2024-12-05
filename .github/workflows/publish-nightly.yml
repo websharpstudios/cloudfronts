@@ -58,8 +58,8 @@ jobs:
       if: matrix.os == 'ubuntu-latest'
       run: | 
         dotnet publish src/Smartstore.Web/Smartstore.Web.csproj -c Release -o ./.build/release --no-restore --no-build --no-self-contained
-        #docker build --build-arg SOURCE=./.build/release -f NoBuild.Dockerfile -t scott81weeden/cloudfronts-linux:nightly .
-        #docker push scott81weeden/cloudfronts-linux:nightly
+        docker build --build-arg SOURCE=./.build/release -f NoBuild.Dockerfile -t scott81weeden/cloudfronts-linux:nightly .
+        docker push scott81weeden/cloudfronts-linux:nightly
         #docker build --build-arg VERSION=nightly -f NoBuild.Dockerfile -t websharpstudios/cloudfronts-linux:nightly .
         #docker push websharpstudios/cloudfronts-linux:nightly
 
