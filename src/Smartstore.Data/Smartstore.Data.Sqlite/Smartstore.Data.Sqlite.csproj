@@ -18,7 +18,7 @@
         <None Include="$(PkgSQLitePCLRaw_bundle_e_sqlite3)\lib\netstandard2.0\*" CopyToOutputDirectory="PreserveNewest">
             <Visible>false</Visible>
         </None>
-        <None Include="$(PkgSQLitePCLRaw_provider_e_sqlite3)\lib\net6.0\*.dll" CopyToOutputDirectory="PreserveNewest">
+        <None Include="$(PkgSQLitePCLRaw_provider_e_sqlite3)\lib\net9.0\*.dll" CopyToOutputDirectory="PreserveNewest">
             <Visible>false</Visible>
         </None>
         <None Include="$(PkgSQLitePCLRaw_core)\lib\netstandard2.0\*.dll" CopyToOutputDirectory="PreserveNewest">

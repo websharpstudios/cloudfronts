@@ -34,7 +34,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.x
+        dotnet-version: 9.x
 
     - name: Build
       run: dotnet build Smartstore.sln -c Release
@@ -43,7 +43,7 @@ jobs:
       run: dotnet test Smartstore.sln -c Release --no-restore --no-build
     
     - name: Log in to the GitHub Container registry
-      uses: docker/login-action@v3
+      uses: docker/login-action@v3.3
       with:
         registry: ghcr.io
         username: ${{ github.actor }}

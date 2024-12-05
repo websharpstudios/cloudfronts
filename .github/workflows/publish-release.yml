@@ -3,7 +3,7 @@ name: Publish release Docker image
 on:
   push:
     branches:
-      - '5.1.0.x' # << Change this for new versions.
+      - '9.1.0.x' # << Change this for new versions.
   workflow_dispatch:
 
 env:
@@ -40,13 +40,13 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.x # << Change this to current .NET version.
+        dotnet-version: 9.x # << Change this to current .NET version.
 
     - name: Build
       run: dotnet build Smartstore.sln -c Release
 
     - name: Log in to the GitHub Container registry
-      uses: docker/login-action@v4
+      uses: docker/login-action@v3
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
