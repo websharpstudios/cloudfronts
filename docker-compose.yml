@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   web:
-    image: ghcr.io/scott81weeden/cloudfronts-linux
+    image: scott81weeden/cloudfronts-linux
     container_name: web
     ports:
       - "80:80"
