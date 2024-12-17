@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Query;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
+using Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal;
 using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using Smartstore.Data.Providers;
 
@@ -15,8 +16,10 @@ namespace Smartstore.Data.SqlServer.Translators
     [SuppressMessage("Usage", "EF1001:Internal EF Core API usage.", Justification = "Pending")]
     internal class SqlServerMappingMethodCallTranslatorProvider : SqlServerMethodCallTranslatorProvider
     {
-        public SqlServerMappingMethodCallTranslatorProvider(RelationalMethodCallTranslatorProviderDependencies dependencies)
-            : base(dependencies)
+        public SqlServerMappingMethodCallTranslatorProvider(
+            RelationalMethodCallTranslatorProviderDependencies dependencies,
+            ISqlServerSingletonOptions sqlServerSingletonOptions)
+            : base(dependencies, sqlServerSingletonOptions)
         {
         }
 
@@ -39,13 +42,6 @@ namespace Smartstore.Data.SqlServer.Translators
             return base.Translate(model, instance, method, arguments, logger);
         }
 
-        /// <summary>
-        /// Maps the given provider-agnostic <see cref="DbFunctions"/> extension method
-        /// (from <see cref="DbFunctionsExtensions"/> class)
-        /// to the matching provider-specific method.
-        /// </summary>
-        /// <param name="sourceMethod">The source method from <see cref="DbFunctionsExtensions"/> to map.</param>
-        /// <returns>Information about the target provider-specific method and translator.</returns>
         private DbFunctionMap MapDbFunction(MethodInfo sourceMethod)
         {
             var translator = FindMethodCallTranslator(sourceMethod);

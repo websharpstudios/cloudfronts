@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "icon.png",
+      "AssetFile": "icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XrZiIOHuu+C19/lakVWriVXmNmMF0WJZHLJwheGC+90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 06:22:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XrZiIOHuu+C19/lakVWriVXmNmMF0WJZHLJwheGC+90="
+        }
+      ]
+    },
+    {
+      "Route": "icon.yw8au45di1.png",
+      "AssetFile": "icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XrZiIOHuu+C19/lakVWriVXmNmMF0WJZHLJwheGC+90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 06:22:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yw8au45di1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XrZiIOHuu+C19/lakVWriVXmNmMF0WJZHLJwheGC+90="
+        },
+        {
+          "Name": "label",
+          "Value": "icon.png"
+        }
+      ]
+    }
+  ]
+}
