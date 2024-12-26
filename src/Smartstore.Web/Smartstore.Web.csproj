@@ -109,6 +109,50 @@
 		</AssemblyAttribute>
 	</ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Modules\Smartstore.Clickatell\Localization\" />
+      <Folder Include="Modules\Smartstore.Clickatell\Views\Clickatell\" />
+      <Folder Include="Modules\Smartstore.Clickatell\wwwroot\" />
+      <Folder Include="Modules\Smartstore.Google.Analytics\Localization\" />
+      <Folder Include="Modules\Smartstore.Google.Analytics\Views\GoogleAnalytics\" />
+      <Folder Include="Modules\Smartstore.Google.Analytics\wwwroot\js\" />
+      <Folder Include="Modules\Smartstore.Google.MerchantCenter\Files\" />
+      <Folder Include="Modules\Smartstore.Google.MerchantCenter\Localization\" />
+      <Folder Include="Modules\Smartstore.Google.MerchantCenter\Views\GoogleMerchantCenter\" />
+      <Folder Include="Modules\Smartstore.Google.MerchantCenter\Views\Shared\Components\GmcConfiguration\" />
+      <Folder Include="Modules\Smartstore.Google.MerchantCenter\Views\Shared\EditorTemplates\" />
+      <Folder Include="Modules\Smartstore.Google.MerchantCenter\wwwroot\js\" />
+      <Folder Include="Modules\Smartstore.Microsoft.Auth\Localization\" />
+      <Folder Include="Modules\Smartstore.Microsoft.Auth\Views\MicrosoftAuth\" />
+      <Folder Include="Modules\Smartstore.Microsoft.Auth\wwwroot\" />
+      <Folder Include="Modules\Smartstore.OfflinePayment\Localization\" />
+      <Folder Include="Modules\Smartstore.OfflinePayment\Views\OfflinePayment\" />
+      <Folder Include="Modules\Smartstore.OfflinePayment\Views\Shared\Components\DirectDebit\" />
+      <Folder Include="Modules\Smartstore.OfflinePayment\Views\Shared\Components\ManualPayment\" />
+      <Folder Include="Modules\Smartstore.OfflinePayment\Views\Shared\Components\PurchaseOrderNumber\" />
+      <Folder Include="Modules\Smartstore.OfflinePayment\wwwroot\brands\" />
+      <Folder Include="Modules\Smartstore.PayPal\Localization\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\PayPalAdmin\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPalApm\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPalCreditCard\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPalInvoice\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPalPayLaterMessage\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPalPayLater\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPalPaymentSelection\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPalSepa\" />
+      <Folder Include="Modules\Smartstore.PayPal\Views\Shared\Components\PayPal\" />
+      <Folder Include="Modules\Smartstore.PayPal\wwwroot\brands\" />
+      <Folder Include="Modules\Smartstore.PayPal\wwwroot\js\" />
+      <Folder Include="Modules\Smartstore.ShippingByWeight\Localization\" />
+      <Folder Include="Modules\Smartstore.ShippingByWeight\Views\ShippingByWeight\" />
+      <Folder Include="Modules\Smartstore.Shipping\Localization\" />
+      <Folder Include="Modules\Smartstore.Shipping\Views\ByTotal\" />
+      <Folder Include="Modules\Smartstore.Shipping\Views\FixedRate\" />
+      <Folder Include="Modules\Smartstore.Tax\Localization\" />
+      <Folder Include="Modules\Smartstore.Tax\Views\TaxByRegion\" />
+      <Folder Include="Modules\Smartstore.Tax\Views\TaxFixedRate\" />
+    </ItemGroup>
+
     <PropertyGroup>
 		<!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your project-->
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
