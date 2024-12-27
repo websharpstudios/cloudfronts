@@ -3,7 +3,7 @@ name: Publish release Docker image
 on:
   push:
     branches:
-      - '9.1.0.x' # << Change this for new versions.
+      - 'main' # << Change this for new versions.
   workflow_dispatch:
 
 env:
@@ -32,10 +32,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Format branch label
-      id: format-branch-label
-      run: bash .github/FormatBranchLabel.sh
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
